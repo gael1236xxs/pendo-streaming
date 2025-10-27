@@ -18,3 +18,6 @@ require __DIR__.'/../vendor/autoload.php';
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $app->handleRequest(Request::capture());
+
+// Redirige todas las solicitudes a public/index.php
+require_once __DIR__ . '/../public/index.php';
